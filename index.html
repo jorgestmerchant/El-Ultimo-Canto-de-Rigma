@@ -10,19 +10,115 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="fairies-container" id="fairies-container"></div>
+
   <aside class="panel">
     <div class="panel-header">
       <span class="panel-diamond"></span>
-      <h1 class="panel-title">Menu</h1>
+      <h1 class="panel-title">Glosario</h1>
     </div>
     <nav class="panel-nav">
-      <button class="panel-item is-active">Inicio</button>
-      <button class="panel-item">Personajes</button>
-      <button class="panel-item">Mapa</button>
-      <button class="panel-item">Bestiario</button>
-      <button class="panel-item">Hechizos</button>
-      <button class="panel-item">Historial</button>
+      <button class="panel-item is-active" data-section="races">Razas</button>
     </nav>
   </aside>
+
+  <div class="races-view" id="races-view">
+    <aside class="races-list">
+      <h2 class="races-list-title">Razas</h2>
+      <button class="race-item is-active" data-race="humanos">
+        <img class="race-chip-img" src="Razas/Humanos/Logo Humanos.png" alt="">Humanos
+      </button>
+      <button class="race-item" data-race="elfos">
+        <span class="race-chip"></span>Elfos
+      </button>
+      <button class="race-item" data-race="enanos">
+        <span class="race-chip"></span>Enanos
+      </button>
+      <button class="race-item" data-race="medianos">
+        <span class="race-chip"></span>Medianos
+      </button>
+      <button class="race-item" data-race="orcos">
+        <span class="race-chip"></span>Orcos
+      </button>
+      <button class="race-item" data-race="elfos_oscuros">
+        <span class="race-chip"></span>Elfos Oscuros
+      </button>
+      <button class="race-item" data-race="kators">
+        <span class="race-chip"></span>Kators
+      </button>
+      <button class="race-item" data-race="pandarens">
+        <span class="race-chip"></span>Pandarens
+      </button>
+      <button class="race-item" data-race="crozhar">
+        <span class="race-chip"></span>Crozhar
+      </button>
+      <button class="race-item" data-race="drakthir">
+        <span class="race-chip"></span>Drakthir
+      </button>
+      <button class="race-item" data-race="huargens">
+        <span class="race-chip"></span>Huargens
+      </button>
+      <button class="race-item" data-race="elfos_noche">
+        <span class="race-chip"></span>Elfos de la noche
+      </button>
+      <button class="race-item" data-race="elfos_nato">
+        <span class="race-chip"></span>Elfos Nato-Nocturno
+      </button>
+      <button class="race-item" data-race="taurens">
+        <span class="race-chip"></span>Taurens
+      </button>
+      <button class="race-item" data-race="morthra">
+        <span class="race-chip"></span>Morthra
+      </button>
+      <button class="race-item" data-race="draeneis">
+        <span class="race-chip"></span>Draeneis
+      </button>
+      <button class="race-item" data-race="amblys">
+        <span class="race-chip"></span>Amblys
+      </button>
+      <button class="race-item" data-race="automatas">
+        <span class="race-chip"></span>Automatas
+      </button>
+      <button class="race-item" data-race="eterios">
+        <span class="race-chip"></span>Eterios
+      </button>
+      <button class="race-item" data-race="faunos">
+        <span class="race-chip"></span>Faunos
+      </button>
+      <button class="race-item" data-race="goetia">
+        <span class="race-chip"></span>Goetia
+      </button>
+      <button class="race-item" data-race="ninfas">
+        <span class="race-chip"></span>Ninfas
+      </button>
+      <button class="race-item" data-race="tiefling">
+        <span class="race-chip"></span>Tiefling
+      </button>
+    </aside>
+
+    <div class="race-image">
+      <span class="race-image-placeholder">Imagen de la raza</span>
+      <div class="race-squares-top" id="race-squares-top">
+        <span class="square"></span>
+        <span class="square"></span>
+      </div>
+      <div class="race-squares-bottom-left" id="race-squares-bottom-left">
+        <span class="square"></span>
+        <span class="square"></span>
+      </div>
+      <div class="race-squares" id="race-squares">
+        <img class="square-img" id="race-img-1" src="" alt="">
+        <img class="square-img" id="race-img-2" src="" alt="">
+        <img class="square-img" id="race-img-3" src="" alt="">
+      </div>
+    </div>
+
+    <aside class="race-description">
+      <h2 class="race-name" id="race-name">Humanos</h2>
+      <p class="race-desc" id="race-desc">Selecciona una raza para ver su descripción.</p>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
