@@ -3,136 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Archivo Arcano</title>
+  <title>El Último Canto de Rigma</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <aside class="sidebar stone-panel">
-      <div class="sidebar__crest">
-        <span class="crest__gem"></span>
-        <p class="sidebar__subtitle">Compendio del Reino Verde</p>
-        <h1>Razas y Clases</h1>
-      </div>
-
-      <nav class="sidebar__nav" aria-label="Navegacion principal fantastica">
-        <button class="tab-button is-active" type="button" data-tab="races">
-          <span class="tab-button__index">I</span>
-          <span class="tab-button__text">Razas</span>
-        </button>
-        <button class="tab-button" type="button" data-tab="classes">
-          <span class="tab-button__index">II</span>
-          <span class="tab-button__text">Clases</span>
-        </button>
-      </nav>
-
-      <div class="sidebar__legend">
-        <p>Las tablas antiguas susurran linajes, vocaciones y juramentos olvidados.</p>
-      </div>
-    </aside>
-
-    <main class="archive-view">
-      <section class="frame-panel">
-        <div class="butterfly-path" aria-hidden="true">
-          <div class="butterfly">
-            <span class="butterfly__wing butterfly__wing--left"></span>
-            <span class="butterfly__body"></span>
-            <span class="butterfly__wing butterfly__wing--right"></span>
-          </div>
-        </div>
-
-        <div class="stone-transition" aria-hidden="true">
-          <div class="stone-slab stone-slab--left">
-            <span class="slab-rune">Aerlinn</span>
-          </div>
-          <div class="stone-impact-core"></div>
-          <div class="stone-slab stone-slab--right">
-            <span class="slab-rune">Silvaris</span>
-          </div>
-          <div class="impact-runes">
-            <span>Ela</span>
-            <span>Thir</span>
-            <span>Luin</span>
-            <span>Sael</span>
-            <span>Vaen</span>
-            <span>Elen</span>
-          </div>
-        </div>
-
-        <div class="frame-panel__content">
-          <div class="content-header">
-            <p class="content-header__kicker">Archivo vivo</p>
-            <h2 id="panel-title">Razas Ancestrales</h2>
-            <p id="panel-description">
-              Cada linaje guarda dones viejos, afinidades con la magia y memorias grabadas en piedra y bosque.
-            </p>
-          </div>
-
-          <section class="content-panel is-active" data-panel="races">
-            <div class="entry-grid">
-              <article class="entry-card">
-                <h3>Elfos del Alba</h3>
-                <p>Guardianes de arboledas sagradas, de mirada serena y magia tejida con luz lunar.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Enanos de Basalto</h3>
-                <p>Forjadores de juramentos y murallas, nacidos entre cavernas de roca viva.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Humanos del Reino Central</h3>
-                <p>Versatiles y ambiciosos, levantan ciudades donde otros solo ven fronteras.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Silvanos</h3>
-                <p>Errantes del follaje antiguo, veloces y atentos al eco del viento.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Dracoborn</h3>
-                <p>Herederos de sangre draconica, orgullosos y marcados por poder elemental.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Medianos del Musgo</h3>
-                <p>Pequenos exploradores de colinas verdes, astutos, hospitalarios y escurridizos.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="content-panel" data-panel="classes" hidden>
-            <div class="entry-grid">
-              <article class="entry-card">
-                <h3>Guerrero</h3>
-                <p>Muralla de acero y disciplina, experto en armas, escudos y estrategia de campo.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Mago</h3>
-                <p>Erudito del velo arcano, invoca runas, portales y fuegos nacidos del conocimiento.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Druida</h3>
-                <p>Aliado de la naturaleza primigenia, cambia de forma y conversa con bosques antiguos.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Picaro</h3>
-                <p>Maestro del sigilo, la precision y los secretos guardados tras puertas prohibidas.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Paladin</h3>
-                <p>Campeon de juramentos sagrados, mezcla fe, espada y resplandor protector.</p>
-              </article>
-              <article class="entry-card">
-                <h3>Bardo</h3>
-                <p>Tejedor de historias y encantamientos, convierte musica y palabra en poder.</p>
-              </article>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+  <aside class="panel">
+    <div class="panel-header">
+      <span class="panel-diamond"></span>
+      <h1 class="panel-title">Menu</h1>
+    </div>
+    <nav class="panel-nav">
+      <button class="panel-item is-active">Inicio</button>
+      <button class="panel-item">Personajes</button>
+      <button class="panel-item">Mapa</button>
+      <button class="panel-item">Bestiario</button>
+      <button class="panel-item">Hechizos</button>
+      <button class="panel-item">Historial</button>
+    </nav>
+  </aside>
 </body>
 </html>
