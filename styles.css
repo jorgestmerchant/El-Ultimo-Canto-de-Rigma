@@ -167,6 +167,25 @@ body {
   backdrop-filter: blur(10px);
 }
 
+.races-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.races-list::-webkit-scrollbar-track {
+  background: rgba(20, 10, 30, 0.5);
+  border-radius: 4px;
+}
+
+.races-list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-purple), var(--magic-cyan));
+  border-radius: 4px;
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.races-list::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--magic-cyan), var(--accent-purple));
+}
+
 .races-list-title {
   margin: 0 0 12px;
   font-family: "Cinzel", serif;
@@ -179,7 +198,7 @@ body {
 
 .race-item {
   width: 100%;
-  padding: 10px 14px;
+  padding: 8px 14px;
   background: transparent;
   border: 1px solid var(--border-subtle);
   border-radius: 10px;
@@ -194,6 +213,21 @@ body {
   gap: 10px;
 }
 
+.race-chip-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(103, 232, 249, 0.3);
+}
+
+.race-item:hover .race-chip-img {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
+}
+
 .race-chip {
   width: 40px;
   height: 40px;
@@ -204,16 +238,18 @@ body {
 }
 
 .race-chip-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
   object-fit: cover;
   flex-shrink: 0;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(103, 232, 249, 0.3);
 }
 
 .race-item:hover .race-chip-img {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(103, 232, 249, 0.5);
 }
 
 .race-item:hover {
@@ -348,6 +384,7 @@ body {
     0 0 40px rgba(168, 85, 247, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(10px);
+  min-height: 500px;
 }
 
 .race-name {
@@ -364,6 +401,40 @@ body {
   font-size: 1.2rem;
   line-height: 1.7;
   color: var(--text-secondary);
+}
+
+.passive-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.passive-title {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  color: var(--magic-cyan);
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.passive-box {
+  min-height: 120px;
+  background: rgba(20, 10, 30, 0.5);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passive-placeholder {
+  color: var(--text-secondary);
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+  text-shadow: 0 0 10px var(--accent-glow);
 }
 
 .fairies-container {

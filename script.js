@@ -21,7 +21,10 @@ const racesData = {
   },
   elfos: {
     name: 'Elfos',
-    desc: 'Seres elegantes y longevos, maestros de la magia y guardianes de los bosques antiguos.'
+    desc: 'Seres elegantes y longevos, maestros de la magia y guardianes de los bosques antiguos.',
+    img: 'Razas/Elfos/Logo Elfo (Alto Elfo).png',
+    img2: 'Razas/Elfos/Logo Elfo (Elfo del bosque).png',
+    img3: 'Razas/Elfos/Logo Elfo (Elfo de Sangre).png'
   },
   enanos: {
     name: 'Enanos',
