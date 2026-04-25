@@ -316,9 +316,33 @@ body {
   right: 20px;
   display: none;
   gap: 8px;
+  flex-wrap: wrap;
+  max-width: 300px;
 }
 
 .race-squares.is-visible {
+  display: flex;
+}
+
+.race-squares-fourth {
+  position: absolute;
+  bottom: 20px;
+  right: 254px;
+  display: none;
+}
+
+.race-squares-fourth.is-visible {
+  display: flex;
+}
+
+.race-squares-fifth {
+  position: absolute;
+  bottom: 20px;
+  right: 332px;
+  display: none;
+}
+
+.race-squares-fifth.is-visible {
   display: flex;
 }
 
@@ -357,8 +381,8 @@ body {
 }
 
 .square-img {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.4);

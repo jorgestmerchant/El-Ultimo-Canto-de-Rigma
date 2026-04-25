@@ -6,6 +6,8 @@ const raceDesc = document.getElementById('race-desc');
 const raceSquares = document.getElementById('race-squares');
 const raceSquaresTop = document.getElementById('race-squares-top');
 const raceSquaresBottomLeft = document.getElementById('race-squares-bottom-left');
+const raceSquaresFourth = document.getElementById('race-squares-fourth');
+const raceSquaresFifth = document.getElementById('race-squares-fifth');
 const fairiesContainer = document.getElementById('fairies-container');
 
 const racesWithSquares = ['elfos', 'kators', 'draeneis', 'humanos', 'goetia', 'tiefling'];
@@ -66,12 +68,16 @@ const racesData = {
   drakthir: {
     name: 'Drakthir',
     desc: 'Ancestrales guardianes dracónicos, señores del fuego y la destrucción.',
-    img: 'Razas/Drakthir/Logo Drakthir.png'
+    img: 'Razas/Drakthir/Logo Drakthir.png',
+    bottomLeftImg: 'Razas/Drakthir/Logo Drakthir.png',
+    bottomLeftImg2: 'Razas/Drakthir/Logo Drakthir Dragon.png'
   },
   huargens: {
     name: 'Huargens',
     desc: 'Humanoides con rasgos lupinos, cazadores natos con un fuerte sentido de manada.',
-    img: 'Razas/Huargen/Logo Huargen.png'
+    img: 'Razas/Huargen/Logo Huargen.png',
+    bottomLeftImg: 'Razas/Huargen/Logo Huargen (Humano).png',
+    bottomLeftImg2: 'Razas/Huargen/Logo Huargen.png'
   },
   elfos_noche: {
     name: 'Elfos de la noche',
@@ -96,12 +102,16 @@ const racesData = {
   draeneis: {
     name: 'Draeneis',
     desc: 'Refugiados de un mundo destruido, portan la luz de los titanes en su piel cristalina.',
-    img: 'Razas/Draeneis/Logo Draeneis.png'
+    img: 'Razas/Draeneis/Logo Draeneis.png',
+    img2: 'Razas/Draeneis/Logo Draenei Eredar.png',
+    img3: 'Razas/Draeneis/Logo draenei temple luz.png'
   },
   amblys: {
     name: 'Amblys',
     desc: 'Humanos corrompidos por energía void, ahora existen entre la realidad y la sombra.',
-    img: 'Razas/Amblys/Logo Amblys.png'
+    img: 'Razas/Amblys/Logo Amblys.png',
+    bottomLeftImg: 'Razas/Amblys/Logo Amblys Humano.png',
+    bottomLeftImg2: 'Razas/Amblys/Logo Amblys.png'
   },
   automatas: {
     name: 'Automatas',
@@ -121,7 +131,9 @@ const racesData = {
   goetia: {
     name: 'Goetia',
     desc: 'Demonios menores invocados por magos, algunos han elegido permanecer en el mundo mortal.',
-    img: 'Razas/Goetia/Logo Goetia.png'
+    img: 'Razas/Goetia/Logo Goetia.png',
+    img2: 'Razas/Goetia/Logo Goetica negro.png',
+    img3: 'Razas/Goetia/Logo Goetia blanco.png'
   },
   ninfas: {
     name: 'Ninfas',
@@ -132,8 +144,10 @@ const racesData = {
     name: 'Tiefling',
     desc: 'Descendientes de pactos demoníacos, marcados por sangre infernal y resistencia a las llamas.',
     img: 'Razas/Tieflings/Logo Tieflings.png',
-    img2: '',
-    img3: ''
+    img2: 'Razas/Tieflings/Logo Tieflings Agua.png',
+    img3: 'Razas/Tieflings/Logo Tieflings Naturaleza .png',
+    img4: 'Razas/Tieflings/Logo Tieglings Roca.png',
+    img5: ''
   }
 };
 
@@ -192,6 +206,7 @@ raceItems.forEach(item => {
       const raceImg1 = document.getElementById('race-img-1');
       const raceImg2 = document.getElementById('race-img-2');
       const raceImg3 = document.getElementById('race-img-3');
+      const raceImg4 = document.getElementById('race-img-4');
       if (race.img) raceImg1.src = race.img;
       if (race.img2) raceImg2.src = race.img2;
       if (race.img3) raceImg3.src = race.img3;
@@ -199,12 +214,37 @@ raceItems.forEach(item => {
       raceImg1.onclick = () => { if (race.img) raceMainImg.src = race.img; };
       raceImg2.onclick = () => { if (race.img2) raceMainImg.src = race.img2; };
       raceImg3.onclick = () => { if (race.img3) raceMainImg.src = race.img3; };
+
+      if (raceKey === 'tiefling' && race.img4) {
+        raceSquaresFourth.classList.add('is-visible');
+        raceImg4.src = race.img4;
+        raceImg4.onclick = () => { raceMainImg.src = race.img4; };
+      } else {
+        raceSquaresFourth.classList.remove('is-visible');
+      }
+
+      if (raceKey === 'tiefling' && race.img5) {
+        raceSquaresFifth.classList.add('is-visible');
+        const raceImg5 = document.getElementById('race-img-5');
+        raceImg5.src = race.img5;
+        raceImg5.onclick = () => { raceMainImg.src = race.img5; };
+      } else {
+        raceSquaresFifth.classList.remove('is-visible');
+      }
     } else {
       raceSquares.classList.remove('is-visible');
+      raceSquaresFourth.classList.remove('is-visible');
     }
 
     if (racesWithBottomLeftSquares.includes(raceKey)) {
       raceSquaresBottomLeft.classList.add('is-visible');
+      const raceBlImg1 = document.getElementById('race-bl-img-1');
+      const raceBlImg2 = document.getElementById('race-bl-img-2');
+      if (race.bottomLeftImg) raceBlImg1.src = race.bottomLeftImg;
+      if (race.bottomLeftImg2) raceBlImg2.src = race.bottomLeftImg2;
+
+      raceBlImg1.onclick = () => { if (race.bottomLeftImg) raceMainImg.src = race.bottomLeftImg; };
+      raceBlImg2.onclick = () => { if (race.bottomLeftImg2) raceMainImg.src = race.bottomLeftImg2; };
     } else {
       raceSquaresBottomLeft.classList.remove('is-visible');
     }
