@@ -14,86 +14,135 @@
   <div class="fairies-container" id="fairies-container"></div>
 
   <aside class="panel">
+    <span class="panel-corner-decoration top-left">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 55 Q5 30 15 20 Q20 15 25 10 Q30 5 35 5" stroke="#2d5a3d" stroke-width="3" fill="none"/>
+        <path d="M15 20 Q18 22 20 18 Q22 14 26 15" stroke="#3d7a4d" stroke-width="2" fill="none"/>
+        <path d="M25 10 Q27 8 30 9 Q33 10 35 5" stroke="#4a9a5a" stroke-width="2" fill="none"/>
+        <ellipse cx="20" cy="18" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-30 20 18)"/>
+        <ellipse cx="28" cy="8" rx="3" ry="5" fill="#4a9a5a" transform="rotate(15 28 8)"/>
+        <ellipse cx="10" cy="40" rx="5" ry="3" fill="#2d5a3d" transform="rotate(-60 10 40)"/>
+        <ellipse cx="8" cy="30" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-45 8 30)"/>
+        <path d="M5 55 L5 50 Q8 48 6 45 L8 42 Q10 40 8 38" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+      </svg>
+    </span>
+    <span class="panel-corner-decoration top-right">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 55 Q5 30 15 20 Q20 15 25 10 Q30 5 35 5" stroke="#2d5a3d" stroke-width="3" fill="none"/>
+        <path d="M15 20 Q18 22 20 18 Q22 14 26 15" stroke="#3d7a4d" stroke-width="2" fill="none"/>
+        <path d="M25 10 Q27 8 30 9 Q33 10 35 5" stroke="#4a9a5a" stroke-width="2" fill="none"/>
+        <ellipse cx="20" cy="18" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-30 20 18)"/>
+        <ellipse cx="28" cy="8" rx="3" ry="5" fill="#4a9a5a" transform="rotate(15 28 8)"/>
+        <ellipse cx="10" cy="40" rx="5" ry="3" fill="#2d5a3d" transform="rotate(-60 10 40)"/>
+        <ellipse cx="8" cy="30" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-45 8 30)"/>
+        <path d="M5 55 L5 50 Q8 48 6 45 L8 42 Q10 40 8 38" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+      </svg>
+    </span>
+    <span class="panel-corner-decoration bottom-left">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 55 Q5 30 15 20 Q20 15 25 10 Q30 5 35 5" stroke="#2d5a3d" stroke-width="3" fill="none"/>
+        <path d="M15 20 Q18 22 20 18 Q22 14 26 15" stroke="#3d7a4d" stroke-width="2" fill="none"/>
+        <path d="M25 10 Q27 8 30 9 Q33 10 35 5" stroke="#4a9a5a" stroke-width="2" fill="none"/>
+        <ellipse cx="20" cy="18" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-30 20 18)"/>
+        <ellipse cx="28" cy="8" rx="3" ry="5" fill="#4a9a5a" transform="rotate(15 28 8)"/>
+        <ellipse cx="10" cy="40" rx="5" ry="3" fill="#2d5a3d" transform="rotate(-60 10 40)"/>
+        <ellipse cx="8" cy="30" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-45 8 30)"/>
+        <path d="M5 55 L5 50 Q8 48 6 45 L8 42 Q10 40 8 38" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+      </svg>
+    </span>
+    <span class="panel-corner-decoration bottom-right">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 55 Q5 30 15 20 Q20 15 25 10 Q30 5 35 5" stroke="#2d5a3d" stroke-width="3" fill="none"/>
+        <path d="M15 20 Q18 22 20 18 Q22 14 26 15" stroke="#3d7a4d" stroke-width="2" fill="none"/>
+        <path d="M25 10 Q27 8 30 9 Q33 10 35 5" stroke="#4a9a5a" stroke-width="2" fill="none"/>
+        <ellipse cx="20" cy="18" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-30 20 18)"/>
+        <ellipse cx="28" cy="8" rx="3" ry="5" fill="#4a9a5a" transform="rotate(15 28 8)"/>
+        <ellipse cx="10" cy="40" rx="5" ry="3" fill="#2d5a3d" transform="rotate(-60 10 40)"/>
+        <ellipse cx="8" cy="30" rx="4" ry="6" fill="#3d7a4d" transform="rotate(-45 8 30)"/>
+        <path d="M5 55 L5 50 Q8 48 6 45 L8 42 Q10 40 8 38" stroke="#2d5a3d" stroke-width="2" fill="none"/>
+      </svg>
+    </span>
     <div class="panel-header">
       <span class="panel-diamond"></span>
       <h1 class="panel-title">Glosario</h1>
     </div>
     <nav class="panel-nav">
       <button class="panel-item is-active" data-section="races">Razas</button>
+      <button class="panel-item" data-section="classes">Clases</button>
     </nav>
   </aside>
 
   <div class="races-view" id="races-view">
     <aside class="races-list">
       <h2 class="races-list-title">Razas</h2>
-      <button class="race-item is-active" data-race="humanos">
-        <img class="race-chip-img" src="Razas/Humanos/Logo Humanos.png" alt="">Humanos
+<button class="race-item is-active" data-race="humanos">
+        <img class="race-chip-img" src="Razas/Humanos/Logo humanos.png" alt=""><span class="race-item-text">Humanos</span>
       </button>
       <button class="race-item" data-race="elfos">
-        <img class="race-chip-img" src="Razas/Elfos/Logo Elfo (Alto Elfo).png" alt="">Elfos
+        <img class="race-chip-img" src="Razas/Elfos/Logo Elfo (Alto Elfo).png" alt=""><span class="race-item-text">Elfos</span>
       </button>
       <button class="race-item" data-race="enanos">
-        <img class="race-chip-img" src="Razas/Enanos/Logo Enanos.png" alt="">Enanos
+        <img class="race-chip-img" src="Razas/Enanos/Logo Enanos.png" alt=""><span class="race-item-text">Enanos</span>
       </button>
       <button class="race-item" data-race="medianos">
-        <img class="race-chip-img" src="Razas/Medianos/Logo Medianos.png" alt="">Medianos
+        <img class="race-chip-img" src="Razas/Medianos/Logo Medianos.png" alt=""><span class="race-item-text">Medianos</span>
       </button>
       <button class="race-item" data-race="orcos">
-        <img class="race-chip-img" src="Razas/Orcos/Logo Orcos.png" alt="">Orcos
+        <img class="race-chip-img" src="Razas/Orcos/Logo Orcos.png" alt=""><span class="race-item-text">Orcos</span>
       </button>
       <button class="race-item" data-race="elfos_oscuros">
-        <img class="race-chip-img" src="Razas/Elfos Oscuros/Logo Elfo Oscuro.png" alt="">Elfos Oscuros
+        <img class="race-chip-img" src="Razas/Elfos Oscuros/Logo Elfo Oscuro.png" alt=""><span class="race-item-text">Elfos Oscuros</span>
       </button>
       <button class="race-item" data-race="kators">
-        <img class="race-chip-img" src="Razas/Kators/Logo Kator.png" alt="">Kators
+        <img class="race-chip-img" src="Razas/Kators/Logo Kator.png" alt=""><span class="race-item-text">Kators</span>
       </button>
       <button class="race-item" data-race="pandarens">
-        <img class="race-chip-img" src="Razas/Pandarens/Logo Pandarens.png" alt="">Pandarens
+        <img class="race-chip-img" src="Razas/Pandarens/Logo Pandarens.png" alt=""><span class="race-item-text">Pandarens</span>
       </button>
       <button class="race-item" data-race="crozhar">
-        <img class="race-chip-img" src="Razas/Crozhar/Logo Crozhar.png" alt="">Crozhar
+        <img class="race-chip-img" src="Razas/Crozhar/Logo Crozhar.png" alt=""><span class="race-item-text">Crozhar</span>
       </button>
       <button class="race-item" data-race="drakthir">
-        <img class="race-chip-img" src="Razas/Drakthir/Logo Drakthir.png" alt="">Drakthir
+        <img class="race-chip-img" src="Razas/Drakthir/Logo Drakthir.png" alt=""><span class="race-item-text">Drakthir</span>
       </button>
       <button class="race-item" data-race="huargens">
-        <img class="race-chip-img" src="Razas/Huargen/Logo Huargen.png" alt="">Huargens
+        <img class="race-chip-img" src="Razas/Huargen/Logo Huargen.png" alt=""><span class="race-item-text">Huargens</span>
       </button>
       <button class="race-item" data-race="elfos_noche">
-        <img class="race-chip-img" src="Razas/Elfos de la Noche/Logo Elfo de la Noche.png" alt="">Elfos de la noche
+        <img class="race-chip-img" src="Razas/Elfos de la Noche/Logo Elfo de la Noche.png" alt=""><span class="race-item-text">Elfos de la noche</span>
       </button>
       <button class="race-item" data-race="elfos_nato">
-        <img class="race-chip-img" src="Razas/Elfo Nato-Nocturno/Logo Elfo Nato-Nocturno.png" alt="">Elfos Nato-Nocturno
+        <img class="race-chip-img" src="Razas/Elfo Nato-Nocturno/Logo Elfo Nato-Nocturno.png" alt=""><span class="race-item-text">Elfos Nato-Nocturno</span>
       </button>
       <button class="race-item" data-race="taurens">
-        <img class="race-chip-img" src="Razas/Tauren/Logo Tauren.png" alt="">Taurens
+        <img class="race-chip-img" src="Razas/Tauren/Logo Tauren.png" alt=""><span class="race-item-text">Taurens</span>
       </button>
       <button class="race-item" data-race="morthra">
-        <img class="race-chip-img" src="Razas/Morthra/Logo Morthra.png" alt="">Morthra
+        <img class="race-chip-img" src="Razas/Morthra/Logo Morthra.png" alt=""><span class="race-item-text">Morthra</span>
       </button>
       <button class="race-item" data-race="draeneis">
-        <img class="race-chip-img" src="Razas/Draeneis/Logo Draeneis.png" alt="">Draeneis
+        <img class="race-chip-img" src="Razas/Draeneis/Logo Draeneis.png" alt=""><span class="race-item-text">Draeneis</span>
       </button>
       <button class="race-item" data-race="amblys">
-        <img class="race-chip-img" src="Razas/Amblys/Logo Amblys.png" alt="">Amblys
+        <img class="race-chip-img" src="Razas/Amblys/Logo Amblys.png" alt=""><span class="race-item-text">Amblys</span>
       </button>
       <button class="race-item" data-race="automatas">
-        <img class="race-chip-img" src="Razas/Automatas/Logo Automatas.png" alt="">Automatas
+        <img class="race-chip-img" src="Razas/Automatas/Logo Automatas.png" alt=""><span class="race-item-text">Automatas</span>
       </button>
       <button class="race-item" data-race="eterios">
-        <img class="race-chip-img" src="Razas/Eterios/Logo Eterio.png" alt="">Eterios
+        <img class="race-chip-img" src="Razas/Eterios/Logo Eterio.png" alt=""><span class="race-item-text">Eterios</span>
       </button>
       <button class="race-item" data-race="faunos">
-        <img class="race-chip-img" src="Razas/Faunos/Logo Fauno.png" alt="">Faunos
+        <img class="race-chip-img" src="Razas/Faunos/Logo Fauno.png" alt=""><span class="race-item-text">Faunos</span>
       </button>
       <button class="race-item" data-race="goetia">
-        <img class="race-chip-img" src="Razas/Goetia/Logo Goetia.png" alt="">Goetia
+        <img class="race-chip-img" src="Razas/Goetia/Logo Goetia.png" alt=""><span class="race-item-text">Goetia</span>
       </button>
       <button class="race-item" data-race="ninfas">
-        <img class="race-chip-img" src="Razas/Ninfas/Logo Ninfas.png" alt="">Ninfas
+        <img class="race-chip-img" src="Razas/Ninfas/Logo Ninfas.png" alt=""><span class="race-item-text">Ninfas</span>
       </button>
       <button class="race-item" data-race="tiefling">
-        <img class="race-chip-img" src="Razas/Tieflings/Logo Tieflings.png" alt="">Tiefling
+        <img class="race-chip-img" src="Razas/Tieflings/Logo Tieflings.png" alt=""><span class="race-item-text">Tiefling</span>
       </button>
     </aside>
 
@@ -120,19 +169,327 @@
       </div>
     </div>
 
-    <aside class="race-description">
+<aside class="race-description">
       <div class="race-main-image">
         <img id="race-main-img" src="" alt="">
       </div>
       <h2 class="race-name" id="race-name">Humanos</h2>
       <p class="race-desc" id="race-desc">Selecciona una raza para ver su descripción.</p>
       <div class="passive-container">
-        <h3 class="passive-title">Pasiva</h3>
         <div class="passive-box" id="passive-box">
-          <span class="passive-placeholder">Sin pasiva</span>
+          <span class="passive-placeholder">Historia</span>
         </div>
       </div>
+      <button class="race-select-btn-panel" id="race-select-btn-panel">Seleccionar</button>
     </aside>
+  </div>
+
+  <div class="classes-view" id="classes-view">
+    <div class="classes-carousel">
+      <div class="carousel-track" id="carousel-track">
+        <div class="carousel-card" data-class="mago">
+          <div class="card-title">Magos</div>
+          <img src="Clases/Magos/Cartulina Mago.png" alt="Mago">
+          <div class="card-desc">Maestros del mana y lo arcano</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="guerrero">
+          <div class="card-title">Guerreros</div>
+          <img src="Clases/Guerrero/Cartulina Guerrero.png" alt="Guerrero">
+          <div class="card-desc">Maestros del combate cuerpo a cuerpo</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="cazador">
+          <div class="card-title">Cazadores</div>
+          <img src="Clases/Cazador/Cartulina Cazadores.png" alt="Cazador">
+          <div class="card-desc">Rastreadores y maestros del arco</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="picaro">
+          <div class="card-title">Pícaros</div>
+          <img src="Clases/Picaro/57ede61d-f904-437d-aa1f-39bec1c21fa1.png" alt="Picaro">
+          <div class="card-desc">Ágiles y astutos guerreros de las sombras</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="barbaro">
+          <div class="card-title">Bárbaros</div>
+          <img src="Clases/Barbaro/Cartulina Barbaro.png" alt="Barbaro">
+          <div class="card-desc">Guerreros salvajes y formidables</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="paladin">
+          <div class="card-title">Paladines</div>
+          <img src="Clases/Paladin/Cartulina Paladin.png" alt="Paladin">
+          <div class="card-desc">Guerreros sagrados de luz divina</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="bardo">
+          <div class="card-title">Bardos</div>
+          <img src="Clases/Bardo/Cartulina Bardo.png" alt="Bardo">
+          <div class="card-desc">Artistas del combate y magia</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="monje">
+          <div class="card-title">Monjes</div>
+          <img src="Clases/Monjes/Catulina Monjes.png" alt="Monje">
+          <div class="card-desc">Guerreros del cuerpo y la mente</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="alquimista">
+          <div class="card-title">Alquimistas</div>
+          <img src="Clases/Alquimista/Cartulina Alquimista.png" alt="Alquimista">
+          <div class="card-desc">Maestros de pociones y química arcana</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="sacerdote">
+          <div class="card-title">Sacerdotes</div>
+          <img src="Clases/Sacerdote/Cartulina Sacerdote.png" alt="Sacerdote">
+          <div class="card-desc">Elegidos por divinidades, sanadores sagrados</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="ingeniero">
+          <div class="card-title">Ingenieros</div>
+          <img src="Clases/Ingenieros/Cartulina Ingenieros.png" alt="Ingeniero">
+          <div class="card-desc">Genios mecánicos creadores de dispositivos</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="asesino">
+          <div class="card-title">Asesinos</div>
+          <img src="Clases/Asesinos/Cartulina asesino.png" alt="Asesino">
+          <div class="card-desc">Maestros del silencio y la muerte silenciosa</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="cazadorDemonios">
+          <div class="card-title">Cazadores de Demonios</div>
+          <img src="Clases/Cazador de Demonios/Tarjeta Cazador de Demonios.png" alt="Cazador de Demonios">
+          <div class="card-desc">Luchadores sagrados contra el mal infernal</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="chaman">
+          <div class="card-title">Chamanes</div>
+          <img src="Clases/Chamanes/Cartulina Chaman.jpeg" alt="Chaman">
+          <div class="card-desc">Comunicadores con espíritus y elementos</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="domador">
+          <div class="card-title">Domadores de Bestias</div>
+          <img src="Clases/Domador de Bestias/Cartulina Domador de Bestias.png" alt="Domador de Bestias">
+          <div class="card-desc">Uno con las criaturas y bestias salvajes</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="marinero">
+          <div class="card-title">Marineros</div>
+          <img src="Clases/Marinero/Cartulina Marinero.jpeg" alt="Marinero">
+          <div class="card-desc">Expertos del océano y combate naval</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="boticario">
+          <div class="card-title">Boticarios</div>
+          <img src="Clases/Boticario/Cartulina Boticario.png" alt="Boticario">
+          <div class="card-desc">Farmacéuticos del mundo, creadores de venenos</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="brujo">
+          <div class="card-title">Brujos</div>
+          <img src="Clases/Brujos/Cartulina Brujo.jpeg" alt="Brujo">
+          <div class="card-desc">Practizantes oscuros con poder infernal</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="cultista">
+          <div class="card-title">Cultistas</div>
+          <img src="Clases/Cultistas/Cartulina Cultista.png" alt="Cultista">
+          <div class="card-desc">Sirvientes de deidades oscuras</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="paladinOscuro">
+          <div class="card-title">Paladines Oscuros</div>
+          <img src="Clases/Paladin Oscuro/Cartulina Paladin Oscuro.jpeg" alt="Paladin Oscuro">
+          <div class="card-desc">Traidores de la luz, caballeros de sombras</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="druida">
+          <div class="card-title">Druidas</div>
+          <img src="Clases/Druida/Cartulina Druida.jpeg" alt="Druida">
+          <div class="card-desc">Uno con la naturaleza, protectores verdes</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="velador">
+          <div class="card-title">Veladores de Almas</div>
+          <img src="Clases/Velador de Almas/Cartulina Velador de Almas.jpeg" alt="Velador de Almas">
+          <div class="card-desc">Vigilantes del plano espiritual</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="shinobi">
+          <div class="card-title">Shinobis</div>
+          <img src="Clases/Shinobi/Cartulina Shinobi.jpeg" alt="Shinobi">
+          <div class="card-desc">Guerreros japoneses de las sombras</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="mosquetero">
+          <div class="card-title">Mosqueteros</div>
+          <img src="Clases/Mosquetero/Cartulina Mosquetero.png" alt="Mosquetero">
+          <div class="card-desc">Maestros del rifle a larga distancia</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="guardian">
+          <div class="card-title">Guardianes</div>
+          <img src="Clases/Guardian/Cartulina Guardian.jpeg" alt="Guardian">
+          <div class="card-desc">Defensores incansables con escudo</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="arlequin">
+          <div class="card-title">Arlequines</div>
+          <img src="Clases/Arlequin/Cartulina Arlequin.jpeg" alt="Arlequin">
+          <div class="card-desc">Maestros del disfraz y el engaño</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="custodiosangre">
+          <div class="card-title">Custodios de la Sangre</div>
+          <img src="Clases/Custodio de la Sangre/Cartulina Custodio de Sangre.jpeg" alt="Custodio">
+          <div class="card-desc">Guardianas del legado sanguineo</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="peleador">
+          <div class="card-title">Peleadores</div>
+          <img src="Clases/Pelea/Cartulina Peleador.jpeg" alt="Peleador">
+          <div class="card-desc">Maestros del combate desarmado</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="artificiero">
+          <div class="card-title">Artificieros</div>
+          <img src="Clases/Arficiero/Cartulina Artificiero.png" alt="Artificiero">
+          <div class="card-desc">Creadores de artifacts mágicos</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+        <div class="carousel-card" data-class="caballero">
+          <div class="card-title">Caballeros de la Muerte</div>
+          <img src="Clases/Caballero de la Muerte/Cartulina Caballero de la Muerte.png" alt="Caballero de la Muerte">
+          <div class="card-desc">Caballeros necromantes del afterlife</div>
+          <button class="class-select-btn">Seleccionar</button>
+        </div>
+      </div>
+    </div>
+    <div class="class-card-panel" id="class-card-panel">
+      <img id="class-card-panel-img" src="" alt="">
+    </div>
+    <div class="class-detail" id="class-detail">
+      <button class="class-detail-close" id="class-detail-close">Volver</button>
+      <h1 class="class-detail-title" id="class-detail-title">Magos</h1>
+      <div class="class-detail-content">
+        <div class="class-detail-left">
+          <div class="class-passive">
+            <h3 class="class-passive-title">Pasiva: <span id="class-passive-name">Absorción</span></h3>
+            <div class="class-passive-image">
+              <img id="class-passive-img" src="" alt="">
+            </div>
+            <p class="class-passive-desc" id="class-passive-desc"></p>
+          </div>
+          <div class="class-characters">
+            <img id="class-character-img" src="" alt="">
+          </div>
+        </div>
+        <div class="class-detail-center">
+          <div class="class-description-box">
+            <p class="class-description-text" id="class-description-text"></p>
+          </div>
+          <div class="class-abilities">
+            <h3 class="class-abilities-title">Habilidades</h3>
+            <div class="class-abilities-orbs" id="class-abilities-orbs"></div>
+          </div>
+        </div>
+        <div class="class-detail-right">
+          <div class="class-stats-panel">
+            <h3 class="class-stats-title" id="class-stats-title">Estadísticas Magos</h3>
+            <div class="class-stats-list" id="class-stats-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="character-panel" id="character-panel">
+    <div class="character-selection">
+      <div class="character-selected">
+        <span class="selection-label">Raza:</span>
+        <img id="selected-race-img" class="selection-img" src="" alt="">
+        <span class="selection-value" id="selected-race">Ninguna</span>
+        <button class="clear-btn" id="clear-race">×</button>
+      </div>
+      <div class="character-selected">
+        <span class="selection-label">Clase:</span>
+        <img id="selected-class-img" class="selection-img" src="" alt="">
+        <span class="selection-value" id="selected-class">Ninguna</span>
+        <button class="clear-btn" id="clear-class">×</button>
+      </div>
+    </div>
+    <div class="character-stats" id="character-stats">
+      <h3 class="stats-title">Estadísticas Combinadas</h3>
+      <div class="stats-grid" id="stats-grid">
+        <div class="stat-item">
+          <span class="stat-label">Vida</span>
+          <span class="stat-value" id="stat-vida">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Fuerza</span>
+          <span class="stat-value" id="stat-fuerza">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Destreza</span>
+          <span class="stat-value" id="stat-destreza">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Resistencia</span>
+          <span class="stat-value" id="stat-resistencia">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Sigilo</span>
+          <span class="stat-value" id="stat-sigilo">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Supervivencia</span>
+          <span class="stat-value" id="stat-supervivencia">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Carisma</span>
+          <span class="stat-value" id="stat-carisma">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Mana</span>
+          <span class="stat-value" id="stat-mana">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Aprendizaje</span>
+          <span class="stat-value" id="stat-aprendizaje">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Inteligencia</span>
+          <span class="stat-value" id="stat-inteligencia">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-toggle-arrow" id="panel-toggle-arrow">&#9650;</div>
+
+  <div class="modal" id="history-modal">
+    <div class="modal-content">
+      <span class="modal-close" id="modal-close">&times;</span>
+      <h2 class="modal-title" id="modal-title">Historia</h2>
+      <p class="modal-text" id="modal-text"></p>
+      <div class="race-stats-table" id="race-stats-table">
+        <h3 class="stats-table-title">Estadísticas de la Raza</h3>
+        <table class="stats-table">
+          <thead>
+            <tr>
+              <th>Atributo</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="race-stats-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
