@@ -147,10 +147,10 @@
     </aside>
 
     <div class="race-image">
-      <span class="race-image-placeholder">Imagen de la raza</span>
+      <img id="race-display-img" src="" alt="" class="race-display-img">
       <div class="race-squares-top" id="race-squares-top">
-        <span class="square"></span>
-        <span class="square"></span>
+        <img class="square" id="race-top-img-1" src="" alt="">
+        <img class="square" id="race-top-img-2" src="" alt="">
       </div>
       <div class="race-squares-bottom-left" id="race-squares-bottom-left">
         <img class="square-img" id="race-bl-img-1" src="" alt="">
@@ -160,12 +160,9 @@
         <img class="square-img" id="race-img-1" src="" alt="" data-img="">
         <img class="square-img" id="race-img-2" src="" alt="" data-img="">
         <img class="square-img" id="race-img-3" src="" alt="" data-img="">
-      </div>
-      <div class="race-squares-fourth" id="race-squares-fourth">
         <img class="square-img" id="race-img-4" src="" alt="" data-img="">
-      </div>
-      <div class="race-squares-fifth" id="race-squares-fifth">
         <img class="square-img" id="race-img-5" src="" alt="" data-img="">
+        <img class="square-img" id="race-img-6" src="" alt="" data-img="">
       </div>
     </div>
 
@@ -174,6 +171,7 @@
         <img id="race-main-img" src="" alt="">
       </div>
       <h2 class="race-name" id="race-name">Humanos</h2>
+      <p class="race-subtitle" id="race-subtitle"></p>
       <p class="race-desc" id="race-desc">Selecciona una raza para ver su descripción.</p>
       <div class="passive-container">
         <div class="passive-box" id="passive-box">
@@ -475,19 +473,21 @@
     <div class="modal-content">
       <span class="modal-close" id="modal-close">&times;</span>
       <h2 class="modal-title" id="modal-title">Historia</h2>
-      <p class="modal-text" id="modal-text"></p>
-      <div class="race-stats-table" id="race-stats-table">
-        <h3 class="stats-table-title">Estadísticas de la Raza</h3>
-        <table class="stats-table">
-          <thead>
-            <tr>
-              <th>Atributo</th>
-              <th>Valor</th>
-            </tr>
-          </thead>
-          <tbody id="race-stats-body">
-          </tbody>
-        </table>
+      <div class="modal-body">
+        <p class="modal-text" id="modal-text"></p>
+        <div class="race-stats-table" id="race-stats-table">
+          <h3 class="stats-table-title">Estadísticas de la Raza</h3>
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Atributo</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody id="race-stats-body">
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>

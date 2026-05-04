@@ -6,8 +6,6 @@ const raceDesc = document.getElementById('race-desc');
 const raceSquares = document.getElementById('race-squares');
 const raceSquaresTop = document.getElementById('race-squares-top');
 const raceSquaresBottomLeft = document.getElementById('race-squares-bottom-left');
-const raceSquaresFourth = document.getElementById('race-squares-fourth');
-const raceSquaresFifth = document.getElementById('race-squares-fifth');
 const fairiesContainer = document.getElementById('fairies-container');
 
 const racesWithSquares = [];
@@ -39,15 +37,20 @@ const racesData = {
   humanos: {
     name: 'Humanos',
     desc: 'Una raza versátil y ambiciosa, conocida por su adaptabilidad y espíritu conquistador.',
-    history: 'Los humanos son una de las races más jovens del mundo, pero su ambición y adaptabilidad les ha permitido expandirse por todo el continente. Originarios de las tierras centrales, han construido grandes imperios y ciudades comerciales que conectan territorios distantes.',
+    history: 'Los humanos son una de las muchas razas pensantes que habitan este mundo. Se encuentran repartidos entre diversos reinos y culturas, aunque su principal bastión es Valtoria, un gran reino asentado en las tierras de los bosques verdes. Valtoria es considerada el mayor punto de comercio entre los reinos y, sin duda, la ciudad más grande de todo este mundo.\n\nAunque los humanos no poseen una conexión tan profunda con lo arcano como otras razas, han demostrado ser capaces de comprenderlo, estudiarlo y, en algunos casos, dominarlo. Son conocidos por ser personas honorables, valientes y decididas, capaces de enfrentar cualquier mal cara a cara con tal de sobrevivir y proteger aquello que consideran suyo.\n\nSin embargo, no todos los humanos siguen el camino de la nobleza. Dentro de ellos también existe la semilla de la crueldad, y algunos han llegado a corromperse mediante el uso de la magia negra y los poderes oscuros, buscando fuerza, dominio o venganza sin importar el precio.\n\nEntre los humanos destacan principalmente tres grandes grupos: los ciudadanos de Valtoria, reconocidos por su nobleza y su importancia comercial; los guerreros sin temor de Jotunvald, famosos por su fuerza y valentía en batalla; y los habitantes de Heiwa, considerados uno de los pueblos humanos más respetados e importantes entre los grandes reinos.',
     img: 'Razas/Humanos/Logo Humanos.png',
+    mainImg: 'Razas/Humanos/Imagen Humanos (Valtoria).png',
     img2: 'Razas/Humanos/Logo Humanos (Jotnar).png',
     img3: 'Razas/Humanos/Logo Humanos (Heiwa).png',
     subtitle: 'Valtoria',
     subtitle2: 'Jötunvald',
     subtitle3: 'Heiwa',
     bottomRightImg: 'Razas/Humanos/Logo Humanos.png',
+    bottomRightMainImg: 'Razas/Humanos/Imagen Humanos (Valtoria).png',
     bottomRightImg2: 'Razas/Humanos/Logo Humanos (Jotnar).png',
+    bottomRightMainImg2: 'Razas/Humanos/Imagen Humanos jOTUNVALD)).png',
+    bottomRightMainImgFemale: [null, 'Razas/Humanos/Imagen Jotunvald Mujer.png'],
+    bottomRightMainImgMale: [null, 'Razas/Humanos/Imagen Humanos jOTUNVALD)).png'],
     bottomRightImg3: 'Razas/Humanos/Logo Humanos (Heiwa).png',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
@@ -67,7 +70,7 @@ const racesData = {
   elfos: {
     name: 'Elfos',
     desc: 'Seres elegantes y longevos, maestros de la magia y guardianes de los bosques antiguos.',
-    history: 'Los elfos son una raza milenaria que habita en los bosques ancestrales del mundo. Su longevidad les ha permitido acumular conocimientos mágicos y secretos que otras races apenas comienzan a descubrir.',
+    history: 'Habitando en la parte norte del bosque de Lux, los elfos son una de las razas más antiguas que han pisado este mundo. En tiempos remotos, fueron una de las primeras razas pensantes creadas por los dioses para habitar la tierra y moldearla según su voluntad.\n\nSin embargo, este origen divino despertó en muchos de ellos un enorme orgullo, especialmente por su capacidad natural para dominar la magia y las artes arcanas. Para los elfos, el conocimiento mágico no solo representa poder, sino también prestigio, linaje y superioridad.\n\nCon el paso del tiempo, esta arrogancia provocó una profunda división entre su propia gente. Aquellos elfos incapaces de utilizar la magia, o que presentaban diferencias físicas notables, fueron rechazados por sus semejantes. Muchos de ellos sufrieron abusos, desprecio y constante acoso en las calles, marcando así una herida difícil de cerrar dentro de la sociedad élfica.\n\nEntre los elfos existen tres grandes clases sociales. Aunque no son razas distintas, sus formas de vida y su manera de ver el mundo son completamente diferentes. Los Altos Elfos suelen ser los más orgullosos y narcisistas, convencidos de la grandeza de su linaje y de su cercanía con lo arcano. Los Elfos del Bosque son amantes de la naturaleza y, en muchos casos, se consideran guardianes de su equilibrio. Por último, están los Elfos de Sangre, quienes decidieron habitar su propia ciudad de manera tranquila, evitando destacar entre los demás y alejándose de los conflictos más visibles de su pueblo.',
     img: 'Razas/Elfos/Logo Elfo (Alto Elfo).png',
     img2: 'Razas/Elfos/Logo Elfo (Elfo del bosque).png',
     img3: 'Razas/Elfos/Logo Elfo (Elfo de Sangre).png',
@@ -87,7 +90,7 @@ const racesData = {
   enanos: {
     name: 'Enanos',
     desc: 'Expertos mineros y guerreros stubborn, habitantes de las montañas y foros profundos.',
-    history: 'Los enanos son artesanos legendario del subsuelo, constructores de ciudades entera en las entrañas de las montañas. Su resistencia y habilidad en la forja de armas y armaduras los convierten en aliados invaluables.',
+    history: 'Los enanos son una raza fuerte y longeva, capaces de vivir hasta 600 años. Su gran resistencia les permite soportar las altas temperaturas de las minas, forjas y bóvedas construidas dentro de las montañas.\n\nSuelen tener un carácter tosco y directo, por lo que a veces no comprenden del todo las costumbres de otras razas. Aun así, son alegres, leales y muy trabajadores.\n\nSe dedican principalmente a la herrería y la minería, oficios en los que son reconocidos como grandes artesanos. Algunos, sin embargo, abandonan sus hogares para unirse a grupos de aventureros en busca de riquezas y gloria.\n\nSu resistencia al alcohol es legendaria, aunque eso no siempre evita que beban hasta perder la noción de todo.',
     img: 'Razas/Enanos/Logo Enanos.png',
     subtitle: 'Grandes Mineros',
     topLeftImg: 'Icono Femenino.png',
@@ -102,6 +105,7 @@ const racesData = {
     desc: 'Criaturas pequeñas y astutas, conocidas por su agility y habilidad para pasar desapercibidos.',
     history: 'Los medianos son maestros del sigilo y la astucia. Habitan en pequenas comunidades rurales y son conocidos por su capacidad de pasar desapercibidos cuando no quieren ser encontrados.',
     img: 'Razas/Medianos/Logo Medianos.png',
+    subtitle: 'Hijos del sendero',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -115,6 +119,7 @@ const racesData = {
     desc: 'Guerreros fieros y honorables, berserkers de clanes tribales con fuertes tradiciones.',
     history: 'Los orcos provienen de vastas estepas donde la vida es dura y la supervivencia depende de la fuerza y el honor. Cada clan tiene sus propias tradiciones y códigos de honor que(rige su vida.',
     img: 'Razas/Orcos/Logo Orcos.png',
+    subtitle: 'Pueblo del Hacha',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -126,6 +131,7 @@ const racesData = {
     desc: 'Exiliados de la superficie, viven en las profundidades y harnan magia sombría.',
     history: 'Los elfos oscuros fueron desterrados a las profundidades del mundo por traición. Ahora habitan en las sombras y han desarrollado una forma única de magia oscura que les permite sobrevivir en la oscuridad.',
     img: 'Razas/Elfos Oscuros/Logo Elfo Oscuro.png',
+    subtitle: 'Los Mal vistos',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -140,6 +146,7 @@ const racesData = {
     img: 'Razas/Kators/Logo Kator.png',
     img2: 'Razas/Kators/Logo Kator 1.png',
     img3: 'Razas/Kators/Logo Kator 2.png',
+    subtitle: 'Los Viajeros',
     bottomRightImg: 'Razas/Kators/Logo Kator.png',
     bottomRightImg2: 'Razas/Kators/Logo Kator 1.png',
     bottomRightImg3: 'Razas/Kators/Logo Kator 2.png',
@@ -155,6 +162,7 @@ const racesData = {
     desc: 'Una raza pacífica y sabia, dedicada a la contemplación y el equilibrio espiritual.',
     history: 'Los pandarens son seres pacifícos que han alcanzado la iluminación espiritual a través de décadas de meditación. Son guardianes de antiguos secretos y maestros de las artes marciales.',
     img: 'Razas/Pandarens/Logo Pandarens.png',
+    subtitle: 'Gente de la Montaña',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -232,8 +240,11 @@ const racesData = {
     desc: 'Seres grandes y musculosos con cuernos, shamanes naturales y protectores de la tierra.',
     history: 'Los taurens son los hijos espirituales de la tierra misma. Sus chamanes pueden comunicarse con los espíritus de la naturaleza y son protectores ancestrales de los ecosistemas del mundo.',
     img: 'Razas/Tauren/Logo Tauren.png',
-    taurenImg: 'Razas/Tauren/Logo Tauren.png',
-    taurenImg2: 'Razas/Tauren/Logo Tauren Altamontaña.png',
+    img2: 'Razas/Tauren/Logo Tauren Altamontaña.png',
+    subtitle: 'Tauren',
+    subtitle2: 'Altamontaña',
+    bottomRightImg: 'Razas/Tauren/Logo Tauren.png',
+    bottomRightImg2: 'Razas/Tauren/Logo Tauren Altamontaña.png',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -260,6 +271,9 @@ const racesData = {
     img: 'Razas/Draeneis/Logo Draeneis.png',
     img2: 'Razas/Draeneis/Logo Draenei Eredar.png',
     img3: 'Razas/Draeneis/Logo Draenei Templeluz.png',
+    subtitle: 'Draenei',
+    subtitle2: 'Eredar',
+    subtitle3: 'Temple Luz',
     bottomRightImg: 'Razas/Draeneis/Logo Draeneis.png',
     bottomRightImg2: 'Razas/Draeneis/Logo Draenei Eredar.png',
     bottomRightImg3: 'Razas/Draeneis/Logo Draenei Templeluz.png',
@@ -300,6 +314,7 @@ const racesData = {
     desc: 'Seres formados de energía pura, capaces de manipular el éter y la magia elemental.',
     history: 'Los eterios son seres de energía pura que flotan entre los planos de la realidad. Su forma etérea les permite manipular el éter y la magia elemental sin esfuerzo.',
     img: 'Razas/Eterios/Logo Eterio.png',
+    subtitle: 'Los Malditos',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -325,9 +340,11 @@ const racesData = {
     img: 'Razas/Goetia/Logo Goetia.png',
     img2: 'Razas/Goetia/Logo Goetia Negro.png',
     img3: 'Razas/Goetia/Logo Goetia Blanco.png',
+    img4: 'Razas/Goetia/Logo Goetia campanario .png',
     bottomRightImg: 'Razas/Goetia/Logo Goetia.png',
     bottomRightImg2: 'Razas/Goetia/Logo Goetia Negro.png',
     bottomRightImg3: 'Razas/Goetia/Logo Goetia Blanco.png',
+    bottomRightImg4: 'Razas/Goetia/Logo Goetia campanario .png',
     topLeftImg: 'Icono Femenino.png',
     topLeftImg2: 'Icono Masculino.png',
     stats: {
@@ -1237,6 +1254,8 @@ panelItems.forEach(btn => {
     } else if (btn.dataset.section === 'classes') {
       racesView.classList.remove('is-visible');
       classesView.classList.add('is-visible');
+      currentSlide = 0;
+      classesView.querySelector('.classes-carousel').scrollLeft = 0;
       setTimeout(function() { updateCarousel(); }, 50);
     }
   });
@@ -1335,7 +1354,6 @@ classDetailClose.addEventListener('click', function() {
   classDetail.classList.remove('is-visible');
   classCardPanel.classList.remove('is-visible');
   classesView.querySelector('.classes-carousel').style.display = '';
-  updateCarousel();
 });
 });
 
@@ -1351,10 +1369,28 @@ raceItems.forEach(item => {
     raceDesc.textContent = race.desc;
 
     const raceMainImg = document.getElementById('race-main-img');
+    const raceSubtitle = document.getElementById('race-subtitle');
     if (race.img) {
       raceMainImg.src = race.img;
+      if (raceSubtitle) {
+        if (race.subtitle) {
+          raceSubtitle.textContent = '(' + race.subtitle + ')';
+          raceSubtitle.style.display = 'block';
+        } else {
+          raceSubtitle.style.display = 'none';
+        }
+      }
     } else {
       raceMainImg.src = '';
+      if (raceSubtitle) raceSubtitle.style.display = 'none';
+    }
+
+    const raceDisplayImg = document.getElementById('race-display-img');
+    raceDisplayImg.classList.remove('is-visible');
+    raceDisplayImg.src = '';
+    if (race.mainImg) {
+      raceDisplayImg.src = race.mainImg;
+      raceDisplayImg.classList.add('is-visible');
     }
 
     if (race.history) {
@@ -1376,6 +1412,12 @@ raceItems.forEach(item => {
     }
 
     raceSquaresTop.classList.add('is-visible');
+    const raceTopImg1 = document.getElementById('race-top-img-1');
+    const raceTopImg2 = document.getElementById('race-top-img-2');
+    if (race.topLeftImg) raceTopImg1.src = race.topLeftImg;
+    if (race.topLeftImg2) raceTopImg2.src = race.topLeftImg2;
+
+    var currentSubRace = 0;
 
     if (racesWithBottomLeftSquares.includes(raceKey)) {
       raceSquaresBottomLeft.classList.add('is-visible');
@@ -1384,8 +1426,8 @@ raceItems.forEach(item => {
       if (race.bottomLeftImg) raceBlImg1.src = race.bottomLeftImg;
       if (race.bottomLeftImg2) raceBlImg2.src = race.bottomLeftImg2;
 
-      raceBlImg1.onclick = () => { if (race.bottomLeftImg) raceMainImg.src = race.bottomLeftImg; };
-      raceBlImg2.onclick = () => { if (race.bottomLeftImg2) raceMainImg.src = race.bottomLeftImg2; };
+      raceBlImg1.onclick = () => { if (race.bottomLeftImg) { raceMainImg.src = race.bottomLeftImg; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.bottomLeftSubtitle || '') + ')'; } };
+      raceBlImg2.onclick = () => { if (race.bottomLeftImg2) { raceMainImg.src = race.bottomLeftImg2; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.bottomLeftSubtitle2 || '') + ')'; } };
     } else {
       raceSquaresBottomLeft.classList.remove('is-visible');
     }
@@ -1395,36 +1437,65 @@ raceItems.forEach(item => {
       var img1 = document.getElementById('race-img-1');
       var img2 = document.getElementById('race-img-2');
       var img3 = document.getElementById('race-img-3');
+      var img4 = document.getElementById('race-img-4');
+      var img5 = document.getElementById('race-img-5');
+      var img6 = document.getElementById('race-img-6');
       img1.style.display = 'block';
       img2.style.display = 'block';
       img3.style.display = 'block';
-      if (race.bottomRightImg) { img1.src = race.bottomRightImg; } else if (race.img2) { img1.src = race.img2; } else { img1.style.display = 'none'; }
-      if (race.bottomRightImg2) { img2.src = race.bottomRightImg2; } else if (race.img3) { img2.src = race.img3; } else { img2.style.display = 'none'; }
-      if (race.bottomRightImg3) { img3.src = race.bottomRightImg3; } else if (race.img4) { img3.src = race.img4; } else { img3.style.display = 'none'; }
+      img4.style.display = 'block';
+      img5.style.display = 'block';
+      img6.style.display = 'block';
+      if (race.bottomRightImg) { img1.src = race.bottomRightImg; img1.title = race.subtitle || ''; } else if (race.img2) { img1.src = race.img2; img1.title = race.subtitle2 || ''; } else { img1.style.display = 'none'; }
+      if (race.bottomRightImg2) { img2.src = race.bottomRightImg2; img2.title = race.subtitle2 || ''; } else if (race.img3) { img2.src = race.img3; img2.title = race.subtitle3 || ''; } else { img2.style.display = 'none'; }
+      if (race.bottomRightImg3) { img3.src = race.bottomRightImg3; img3.title = race.subtitle3 || ''; } else if (race.img4) { img3.src = race.img4; img3.title = race.subtitle4 || ''; } else { img3.style.display = 'none'; }
+      if (race.bottomRightImg4) { img4.src = race.bottomRightImg4; img4.title = race.subtitle4 || ''; } else if (race.img5) { img4.src = race.img5; img4.title = race.subtitle5 || ''; } else { img4.style.display = 'none'; }
+      if (race.bottomRightImg5) { img5.src = race.bottomRightImg5; img5.title = race.subtitle5 || ''; } else if (race.img6) { img5.src = race.img6; img5.title = race.subtitle6 || ''; } else { img5.style.display = 'none'; }
+      if (race.bottomRightImg6) { img6.src = race.bottomRightImg6; img6.title = race.subtitle6 || ''; } else { img6.style.display = 'none'; }
 
-      img1.onclick = () => { if (race.bottomRightImg) raceMainImg.src = race.bottomRightImg; else if (race.img2) raceMainImg.src = race.img2; };
-      img2.onclick = () => { if (race.bottomRightImg2) raceMainImg.src = race.bottomRightImg2; else if (race.img3) raceMainImg.src = race.img3; };
-      img3.onclick = () => { if (race.bottomRightImg3) raceMainImg.src = race.bottomRightImg3; else if (race.img4) raceMainImg.src = race.img4; };
+      img1.onclick = () => {
+        currentSubRace = 0;
+        if (race.bottomRightMainImg) { raceDisplayImg.src = race.bottomRightMainImg; raceDisplayImg.classList.add('is-visible'); }
+        if (race.bottomRightImg) { raceMainImg.src = race.bottomRightImg; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.subtitle || '') + ')'; }
+      };
+      img2.onclick = () => {
+        currentSubRace = 1;
+        if (race.bottomRightMainImg2) { raceDisplayImg.src = race.bottomRightMainImg2; raceDisplayImg.classList.add('is-visible'); }
+        if (race.bottomRightImg2) { raceMainImg.src = race.bottomRightImg2; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.subtitle2 || '') + ')'; }
+      };
+      img3.onclick = () => {
+        currentSubRace = 2;
+        if (race.bottomRightMainImg3) { raceDisplayImg.src = race.bottomRightMainImg3; raceDisplayImg.classList.add('is-visible'); }
+        if (race.bottomRightImg3) { raceMainImg.src = race.bottomRightImg3; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.subtitle3 || '') + ')'; }
+      };
+      img4.onclick = () => {
+        currentSubRace = 3;
+        if (race.bottomRightMainImg4) { raceDisplayImg.src = race.bottomRightMainImg4; raceDisplayImg.classList.add('is-visible'); }
+        if (race.bottomRightImg4) { raceMainImg.src = race.bottomRightImg4; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.subtitle4 || '') + ')'; }
+      };
+      img5.onclick = () => {
+        currentSubRace = 4;
+        if (race.bottomRightMainImg5) { raceDisplayImg.src = race.bottomRightMainImg5; raceDisplayImg.classList.add('is-visible'); }
+        if (race.bottomRightImg5) { raceMainImg.src = race.bottomRightImg5; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.subtitle5 || '') + ')'; }
+      };
+      img6.onclick = () => {
+        currentSubRace = 5;
+        if (race.bottomRightMainImg6) { raceDisplayImg.src = race.bottomRightMainImg6; raceDisplayImg.classList.add('is-visible'); }
+        if (race.bottomRightImg6) { raceMainImg.src = race.bottomRightImg6; if (raceSubtitle) raceSubtitle.textContent = '(' + (race.subtitle6 || '') + ')'; }
+      };
+
+      var femaleImgs = race.bottomRightMainImgFemale || [];
+      var maleImgs = race.bottomRightMainImgMale || [];
+      raceTopImg1.onclick = () => {
+        var img = femaleImgs[currentSubRace];
+        if (img) { raceDisplayImg.src = img; raceDisplayImg.classList.add('is-visible'); }
+      };
+      raceTopImg2.onclick = () => {
+        var img = maleImgs[currentSubRace];
+        if (img) { raceDisplayImg.src = img; raceDisplayImg.classList.add('is-visible'); }
+      };
     } else {
       raceSquares.classList.remove('is-visible');
-    }
-
-    if (race.img5 || race.bottomRightImg5) {
-      raceSquaresFourth.classList.add('is-visible');
-      var img4 = document.getElementById('race-img-4');
-      if (race.bottomRightImg4) { img4.src = race.bottomRightImg4; } else if (race.img5) { img4.src = race.img5; }
-      img4.onclick = () => { if (race.bottomRightImg4) raceMainImg.src = race.bottomRightImg4; else if (race.img5) raceMainImg.src = race.img5; };
-    } else {
-      raceSquaresFourth.classList.remove('is-visible');
-    }
-
-    if (race.img6 || race.bottomRightImg5) {
-      raceSquaresFifth.classList.add('is-visible');
-      var img5 = document.getElementById('race-img-5');
-      if (race.bottomRightImg5) { img5.src = race.bottomRightImg5; } else if (race.img6) { img5.src = race.img6; }
-      img5.onclick = () => { if (race.bottomRightImg5) raceMainImg.src = race.bottomRightImg5; else if (race.img6) raceMainImg.src = race.img6; };
-    } else {
-      raceSquaresFifth.classList.remove('is-visible');
     }
   });
 });
